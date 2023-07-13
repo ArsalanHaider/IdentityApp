@@ -1,0 +1,39 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.png" class="me-3 logo" alt="logo">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-auto">
+                    <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+                </li>
+                <li class="nav-item  mr-auto">
+                    <a class="nav-link" routerLink="/play"  routerLinkActive="active">Play</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-secondary mx-2" routerLink="/account/register"  routerLinkActive="active">Create Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-secondary" routerLink="/account/login"  routerLinkActive="active">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<style>
+    .logo {
+        width: 350px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+    </style>
